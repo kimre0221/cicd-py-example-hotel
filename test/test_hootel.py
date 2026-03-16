@@ -17,6 +17,9 @@ class TestHootel(object):
         print(self.browser.get_window_size())
         self.browser.maximize_window()
         print(self.browser.get_window_size())
+        self.browser.set_window_size(19100, 800)
+        print(self.browser.get_window_size())
+
 
     def teardown_method(self):
         self.browser.quit()
